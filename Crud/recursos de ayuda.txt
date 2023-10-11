@@ -1,0 +1,8 @@
+builder.Services.AddDbContext<PrimeraDBNetContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+"ConnectionStrings": {
+  "DefaultConnection": ""
+}
+
+Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Tables -force
