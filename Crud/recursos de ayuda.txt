@@ -6,3 +6,10 @@ builder.Services.AddDbContext<PrimeraDBNetContext>(options => options.UseSqlServ
 }
 
 Scaffold-DbContext "" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models/Tables -force
+
+
+create table Usuarios(
+Id int primary key identity(1,1) not null,
+Nombre nvarchar(max) not null,
+Apellido nvarchar(max) not null
+)
